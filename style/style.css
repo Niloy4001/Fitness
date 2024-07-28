@@ -281,3 +281,53 @@ main {
     height: auto;
     background: #000;
 }
+/* habit change section style**************************************************************** */
+.habit-change {
+    max-width: 1060px;
+    margin: 0 auto;
+    background: #000;
+    padding-top: 100px;
+}
+
+.habit-change-title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.habit-change-card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.habit-change-card {
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.habit-change-card img {
+
+    border-radius: 50%;
+}
+
+@media screen and (max-width:576px) {
+    .habit-change-titl {
+        width: 100%;
+    }
+
+    .habit-change {
+        padding: 0;
+    }
+
+    .habit-change-card-container {
+        width: calc(100% - 106px);
+        grid-template-columns: 1fr;
+        padding: 0 53px;
+    }
+}
