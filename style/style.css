@@ -5,15 +5,16 @@
     src: url(PlaywritePE-VariableFont_wght.ttf);
 }
 
+/* default style**************************************** */
 body {
     font-family: "Inter", sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
 
-/* default style**************************************** */
 .primary-h2 {
     color: white;
     font-size: 3rem;
@@ -61,7 +62,6 @@ header {
     height: 750px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9));
-
 }
 
 /* Nav-bar style ********************************************************************/
@@ -85,7 +85,6 @@ header {
     gap: 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 39px;
-
 }
 
 .nav-bar .nav-list .nav-list-item {
@@ -130,6 +129,7 @@ header {
         cursor: pointer;
     }
 }
+
 /* Banner section style  **************************************************/
 .banner {
     max-width: 1060px;
@@ -137,7 +137,6 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 
 .banner-content-container {
@@ -182,7 +181,6 @@ header {
     width: 50%;
     display: flex;
     justify-content: center;
-
 }
 
 .banner .banner-images-container {
@@ -190,7 +188,6 @@ header {
     background-image: url(../images/Images\ 2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
     position: relative;
 }
 
@@ -230,7 +227,6 @@ header {
     border-radius: 12px;
     backdrop-filter: blur(20px);
     text-align: center;
-
 }
 
 .banner-images-container .badge-2 h5 {
@@ -238,8 +234,8 @@ header {
     font-size: 2.5rem;
     font-weight: 900;
 }
-@media screen and (max-width:576px) {
 
+@media screen and (max-width:576px) {
     .banner {
         width: 100%;
         height: 1110px;
@@ -273,7 +269,6 @@ header {
     }
 }
 
-
 /* Main style */
 main {
     max-width: 1440px;
@@ -281,6 +276,7 @@ main {
     height: auto;
     background: #000;
 }
+
 /* habit change section style**************************************************************** */
 .habit-change {
     max-width: 1060px;
@@ -331,6 +327,7 @@ main {
         padding: 0 53px;
     }
 }
+
 /* run-extra****************************************************************** */
 .run-extra {
     max-width: 1060px;
@@ -369,7 +366,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .run-extra-image-container img {
@@ -390,7 +386,6 @@ main {
     .run-extra-content {
         width: 100%;
         display: flex;
-        ;
     }
 
     .run-extra-content-container {
@@ -414,11 +409,11 @@ main {
         border-radius: 18px;
     }
 }
+
 /* Training card container*************************************************************** */
 .training {
     max-width: 1060px;
     margin: 100px auto;
-
 }
 
 .training-title {
@@ -441,6 +436,7 @@ main {
     width: 100%;
     height: 100%;
 }
+
 .training-card {
     position: relative;
 }
@@ -464,7 +460,6 @@ main {
 
     .training-card-container-1 {
         width: 100%;
-
         grid-template-columns: 1.2fr 0.8fr;
     }
 
@@ -483,6 +478,7 @@ main {
         display: none;
     }
 }
+
 /* Bmi title design*************************************** */
 .bmi-title {
     max-width: 1060px;
@@ -490,15 +486,18 @@ main {
     display: flex;
     justify-content: center;
 }
+
 .bmi-title div {
     width: 70%;
 }
+
 @media screen and (max-width: 576px) {
     .bmi-title div {
         width: calc(100% - 40px);
         padding: 0px 20px;
     }
 }
+
 /* BMI chart and Calculator********************************** */
 table {
     color: white;
@@ -539,7 +538,6 @@ table {
 }
 
 .bmi-chart table {
-
     border-collapse: collapse;
 }
 
@@ -574,7 +572,6 @@ td {
 }
 
 .calculator-input-container {
-
     display: grid;
     grid-template-areas:
         "height height weight weight"
@@ -599,7 +596,6 @@ select:focus {
 }
 
 @media screen and (max-width: 576px) {
-
     .chart {
         padding: 30px 0;
     }
@@ -629,8 +625,8 @@ select:focus {
         padding: 10px 20px;
         font-size: 1rem;
     }
-
 }
+
 /* Team section style**************************************** */
 .team {
     max-width: 1060px;
@@ -660,8 +656,6 @@ select:focus {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 280px 280px;
     gap: 25px;
-
-
 }
 
 .team-member {
@@ -686,7 +680,6 @@ select:focus {
         padding: 0px 20px;
         margin: 50px auto 0 auto;
         padding-bottom: 40px;
-
     }
 
     .team-title {
@@ -700,8 +693,6 @@ select:focus {
 
     .team-container {
         grid-template-columns: repeat(1, 1fr);
-
-
     }
 
     .trainer-1,
@@ -725,6 +716,7 @@ select:focus {
         order: 6;
     }
 }
+
 /* Category section************************************************************** */
 .category {
     max-width: 1060px;
@@ -735,7 +727,6 @@ select:focus {
     gap: 80px;
     justify-content: center;
     align-items: center;
-
 }
 
 .category-content-container {
@@ -807,9 +798,9 @@ textarea:focus {
         padding: 20px;
         grid-template-columns: 1fr;
         gap: 40px;
-
     }
 }
+
 /* footer section style********************************************************* */
 footer {
     max-width: 1440px;
@@ -840,7 +831,6 @@ footer {
     font-weight: 600;
     color: white;
     margin-bottom: 15px;
-
 }
 
 .footer-list ul {
