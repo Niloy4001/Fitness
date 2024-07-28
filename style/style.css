@@ -499,3 +499,135 @@ main {
         padding: 0px 20px;
     }
 }
+/* BMI chart and Calculator********************************** */
+table {
+    color: white;
+}
+
+.chart {
+    background-color: #222222;
+    padding: 50px 0;
+    max-width: 1440px;
+    margin: 50px auto;
+    display: flex;
+
+}
+
+.chart-calculator {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.bmi-chart {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.bmi-chart table {
+
+    border-collapse: collapse;
+}
+
+.bmi-chart table,
+th,
+td {
+    border: 1px solid #393939;
+}
+
+.bmi-chart th,
+td {
+    color: #919191;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.bmi-chart th {
+    color: white;
+}
+
+.calculator {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.calculator-title {
+    text-align: left;
+}
+
+.calculator-input-container {
+
+    display: grid;
+    grid-template-areas:
+        "height height weight weight"
+        "age     age   sex    sex"
+        "activity activity activity activity";
+    gap: 12px;
+}
+
+.calculator-input-container input,
+select {
+    padding: 9px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #393939;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.calculator-input-container input,
+select:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    .chart {
+        padding: 30px 0;
+    }
+
+    .chart-calculator {
+        width: calc(100% - 40px);
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bmi-chart {
+        width: 100%;
+        height: auto;
+    }
+
+    .calculator {
+        width: 100%;
+    }
+
+    .calculator-input-container {
+        justify-content: center;
+    }
+
+    .bmi-chart th,
+    td {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+}
