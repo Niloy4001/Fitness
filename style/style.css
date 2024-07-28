@@ -8,3 +8,125 @@
 body {
     font-family: "Inter", sans-serif;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* default style**************************************** */
+.primary-h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.primary-h6 {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.primary-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.btn-primary {
+    border-radius: 40px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px 16px 40px;
+    border: none;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+
+    .primary-h2 {
+        font-size: 2rem;
+    }
+}
+
+/* header style */
+header {
+    max-width: 1440px;
+    height: 750px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9));
+
+}
+
+/* Nav-bar style ********************************************************************/
+.nav-bar {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar h5 {
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.nav-bar .nav-list {
+    display: flex;
+    gap: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 39px;
+
+}
+
+.nav-bar .nav-list .nav-list-item {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 46px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.nav-bar .nav-list .checked {
+    background: rgb(230, 83, 60);
+}
+
+.menu {
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .nav-bar {
+        width: calc(100% - 40px);
+        padding: 56px 20px;
+    }
+
+    .nav-bar .nav-list {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+        cursor: pointer;
+    }
+}
