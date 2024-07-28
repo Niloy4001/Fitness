@@ -130,3 +130,154 @@ header {
         cursor: pointer;
     }
 }
+/* Banner section style  **************************************************/
+.banner {
+    max-width: 1060px;
+    height: calc(100% - 156px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.banner-content-container {
+    width: 50%;
+}
+
+.banner .banner-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 6%;
+}
+
+.banner .banner-content h1 {
+    color: white;
+    font-family: Inter;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-content h1>span {
+    color: white;
+    font-family: write;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.banner-content .download-btn {
+    background: rgb(14, 14, 14);
+    border-radius: 40px;
+    border: 1px solid wheat;
+    padding: 16px 40px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.banner-images {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner .banner-images-container {
+    width: 80%;
+    background-image: url(../images/Images\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    position: relative;
+}
+
+.banner-images-container .badge-1 {
+    width: 40%;
+    height: 15%;
+    position: absolute;
+    top: 73%;
+    left: -10%;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+}
+
+.circle img {
+    width: 40px;
+    height: 40px;
+}
+
+.banner-images-container .badge-1 h6 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.banner-images-container .badge-2 {
+    width: 35%;
+    height: 15%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+
+}
+
+.banner-images-container .badge-2 h5 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+@media screen and (max-width:576px) {
+
+    .banner {
+        width: 100%;
+        height: 1110px;
+        flex-direction: column;
+    }
+
+    .banner-content-container,
+    .banner-images {
+        width: 100%;
+    }
+
+    .banner-images {
+        height: 100%;
+    }
+
+    .banner .banner-content,
+    .banner .banner-images-container {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    .btn-primary,
+    .banner-content .download-btn {
+        padding: 18px 30px;
+        margin-left: 0;
+    }
+
+    .banner-images-container .badge-1 {
+        top: 40%;
+        left: 2%;
+    }
+}
+
+
+/* Main style */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: auto;
+    background: #000;
+}
