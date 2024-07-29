@@ -1,3 +1,4 @@
+/* font****************** */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @font-face {
@@ -265,7 +266,7 @@ header {
 
     .btn-primary,
     .banner-content .download-btn {
-        padding: 18px 30px;
+        padding: 16px;
         margin-left: 0;
     }
 
@@ -746,7 +747,7 @@ select:focus {
 .category-input {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
     padding: 30px;
     border-radius: 8px;
     text-align: center;
@@ -772,6 +773,10 @@ input[type=number],
 textarea:focus {
     outline: none;
 }
+.category-input div{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .category-content {
     box-shadow: 2px 2px 5px #222222;
@@ -792,6 +797,7 @@ textarea:focus {
     border: none;
     border-radius: 8px;
     color: white;
+    cursor: pointer;
 }
 
 .btn-secondary a {
