@@ -242,6 +242,12 @@ header {
         flex-direction: column;
     }
 
+    .banner-btn-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
     .banner-content-container,
     .banner-images {
         width: 100%;
@@ -574,20 +580,25 @@ td {
 .calculator-input-container {
     display: grid;
     grid-template-areas:
-        "height height weight weight"
-        "age     age   sex    sex"
-        "activity activity activity activity";
+        "height weight"
+        "age     sex"
+        "activity activity";
     gap: 12px;
 }
 
 .calculator-input-container input,
 select {
+    width: calc(100% - 20px);
     padding: 9px 10px;
     border-radius: 8px;
     border: none;
     background-color: #393939;
     color: rgba(255, 255, 255, 0.5);
 
+}
+
+.calculator-input-container select {
+    width: 100%;
 }
 
 .calculator-input-container input,
@@ -614,10 +625,6 @@ select:focus {
 
     .calculator {
         width: 100%;
-    }
-
-    .calculator-input-container {
-        justify-content: center;
     }
 
     .bmi-chart th,
@@ -818,7 +825,7 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 0.5fr 0.5fr;
-    gap: 14%;
+    gap: 12%;
 }
 
 .footer-content h2 {
@@ -842,12 +849,12 @@ footer {
 }
 
 footer hr {
-    color: aliceblue;
+    border: 1.5px solid #303030;
     margin-top: 50px;
 }
 
 .footer-right {
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     height: 70px;
     display: flex;
     justify-content: center;
@@ -866,11 +873,4 @@ footer hr {
         gap: 3%;
     }
 
-    .footer-right {
-        color: white;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
