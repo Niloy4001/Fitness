@@ -849,7 +849,7 @@ footer {
 }
 
 footer hr {
-    border: 1.5px solid #303030;
+    border: 2px solid rgba(255, 255, 255, 0.1);
     margin-top: 50px;
 }
 
