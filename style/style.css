@@ -773,7 +773,8 @@ input[type=number],
 textarea:focus {
     outline: none;
 }
-.category-input div{
+
+.category-input div {
     display: flex;
     justify-content: space-evenly;
 }
