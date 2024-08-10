@@ -57,6 +57,17 @@ body {
     }
 }
 
+@media screen and (min-width:576px) and (max-width: 992px) {
+
+    .primary-h2 {
+        font-size: 2rem;
+    }
+
+    .primary-text {
+        font-size: 0.7rem;
+    }
+}
+
 /* header style */
 header {
     max-width: 1440px;
@@ -128,6 +139,21 @@ header {
     .menu {
         display: inline;
         cursor: pointer;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav-bar .nav-list {
+        gap: 1rem;
+    }
+
+    .nav-bar .nav-list .nav-list-item {
+        font-size: 1rem;
+    }
+
+    .nav-bar {
+        width: calc(100% - 60px);
+        padding: 52px 30px;
     }
 }
 
@@ -276,6 +302,50 @@ header {
     }
 }
 
+@media screen and (min-width:576px) and (max-width:992px) {
+    header {
+        height: 1150px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 1110px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .banner-content-container,
+    .banner-images {
+        width: 100%;
+    }
+
+    .banner-images {
+        height: 50%;
+    }
+
+    .banner .banner-content,
+    .banner .banner-images-container {
+        width: calc(100% - 60px);
+        padding: 10px 30px;
+        margin-top: 0;
+    }
+
+    .banner-images-container .badge-1 {
+        top: 58%;
+        left: 5%;
+    }
+
+    .banner .banner-images-container {
+        background-size: 50% 80%;
+        background-position: center;
+    }
+
+    .banner-images-container .badge-2 {
+        top: 16%;
+        right: 12%;
+    }
+}
+
 /* Main style */
 main {
     max-width: 1440px;
@@ -320,7 +390,7 @@ main {
 }
 
 @media screen and (max-width:576px) {
-     
+
     .habit-change {
         padding: 0;
     }
@@ -332,11 +402,20 @@ main {
     }
 }
 
+@media screen and (min-width:576px) and (max-width:992px) {
+    .habit-change-card-container {
+        width: calc(100% - 140px);
+        padding: 0px 70px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* run-extra****************************************************************** */
-.run{
+.run {
     max-width: 1060px;
     margin: 100px auto;
 }
+
 .run-extra {
     width: 100%;
     height: 400px;
@@ -382,10 +461,11 @@ main {
 }
 
 @media screen and (max-width:576px) {
-    .run{
-        width: calc( 100% - 30px );
+    .run {
+        width: calc(100% - 30px);
         padding: 0 15px;
     }
+
     .run-extra {
         max-width: 1060px;
         height: auto;
@@ -419,6 +499,24 @@ main {
         height: 100%;
         border-radius: 18px;
     }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .run {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+
+    .run-extra-content-container {
+        width: 75%;
+        gap: 20px;
+    }
+
+    .run-extra-image-container {
+        width: 80%;
+        height: 60%;
+    }
+
 }
 
 /* Training card container*************************************************************** */
@@ -490,6 +588,14 @@ main {
     }
 }
 
+@media screen and (min-width:576px) and (max-width:992px) {
+    .training {
+        width: (100% - 40px);
+        padding: 0px 20px;
+    }
+
+}
+
 /* Bmi title design*************************************** */
 .bmi-title {
     max-width: 1060px;
@@ -506,6 +612,14 @@ main {
     .bmi-title div {
         width: calc(100% - 40px);
         padding: 0px 20px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .bmi-title {
+        width: calc(100% - 40px);
+        padding: 0px 20px;
+        justify-content: flex-start;
     }
 }
 
@@ -611,7 +725,7 @@ select:focus {
     outline: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     .chart {
         padding: 30px 0;
     }
@@ -638,6 +752,7 @@ select:focus {
         font-size: 1rem;
     }
 }
+
 
 /* Team section style**************************************** */
 .team {
@@ -730,6 +845,20 @@ select:focus {
     }
 }
 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .team {
+        width: calc(100% - 40px);
+        padding: 0px 20px;
+    }
+
+    .team-container {
+        grid-template-rows: 230px 230px;
+        gap: 20px;
+    }
+
+
+}
+
 /* Category section************************************************************** */
 .category {
     max-width: 1060px;
@@ -812,7 +941,7 @@ textarea:focus {
     color: white;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:992px) {
     .category {
         width: calc(100% - 40px);
         padding: 20px;
@@ -875,6 +1004,20 @@ footer hr {
 }
 
 @media screen and (max-width:576px) {
+    .footer {
+        padding-top: 30px;
+    }
+
+    .footer-content-container {
+        width: calc(100% - 40px);
+        padding: 0px 20px;
+        grid-template-columns: 1fr;
+        gap: 3%;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
     .footer {
         padding-top: 30px;
     }
