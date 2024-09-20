@@ -8,5 +8,10 @@ calculateBtn.addEventListener("click", function () {
   const heightInchValueInMeter = heightInchValue * 0.0254;
   const height = heightFootValueInMeter + heightInchValueInMeter;
   const BMI = weight / (height * height);
+  if (isNaN(BMI)) {
+    alert("Please provide number as input");
+    return;
+  }
+
   alert(`Your BMI is ${BMI.toFixed(2)}`);
 });
